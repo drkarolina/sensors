@@ -1,0 +1,54 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "line1_total_in": {
+        "type": "integer"
+      },
+      "line1_total_out": {
+        "type": "integer"
+      },
+      "line1_period_in": {
+        "type": "integer"
+      },
+      "line1_period_out": {
+        "type": "integer"
+      },
+      "location_occupancy_pct": {
+        "type": "string",
+        "pattern": "^[0-9]+(\\.[0-9]+)?$"
+      },
+      "reported_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "sensor_id": {
+        "type": "integer"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "id",
+      "line1_total_in",
+      "line1_total_out",
+      "line1_period_in",
+      "line1_period_out",
+      "location_occupancy_pct",
+      "reported_at",
+      "sensor_id",
+      "created_at",
+      "updated_at"
+    ]
+  }
+}
